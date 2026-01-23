@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap');
+ 
 
 :root {
   --primary: #7FB77E;
@@ -69,6 +71,7 @@
 }
 
 .nav-menu a {
+    font-family: poppins, sans-serif;
     align-items: center;
     text-decoration: none;
     font-size: 18;
@@ -116,7 +119,7 @@
 }
 
 .hero-content p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins, sans-serif;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 8px;
@@ -131,6 +134,7 @@
     border: none;
     padding: 14px 28px;
     font-size: 18px;
+    font-family: poppins, sans-serif;
     font-weight: 600;
     cursor: pointer;
     margin-top: 20px;
@@ -145,4 +149,43 @@
     width: 400px;
     max-width: 100%;
     border-radius: 10px;
+}
+
+/* ABOUT SECTION STYLE */
+.about-content {
+    padding: 50px 10%;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.about-content h2 {
+    font-family: archivo black, sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.about-content a {
+    display: inline-block;
+    margin-top: 30px; 
+    padding: 14px 28px;
+    background-color: #6b8e4e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about-content img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
 }
