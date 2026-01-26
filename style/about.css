@@ -84,7 +84,7 @@ html {
     font-family: poppins, sans-serif;
     align-items: center;
     text-decoration: none;
-    font-size: 18;
+    font-size: 1.2rem;
     color: var(--text-dark);
     cursor: pointer;
 }
@@ -93,12 +93,12 @@ html {
     color: #4b4b4b;
 }
 
-.navbar .navbar-container .nav-menu a {
-    font-size: 1.5rem; /* Sesuaikan ukuran agar tidak terlalu besar */
+/* .navbar .navbar-container .nav-menu a {
+    font-size: 1.5rem;
     margin: 1rem 0;
     width: 100%;
     text-align: center;
-}
+} */
 
 .nav-icons {
     flex: 1;
@@ -108,6 +108,14 @@ html {
     gap: 20px;
     color: var(--text-dark);
     cursor: pointer;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+}
+
+.nav-icons i:hover {
+    color: #4b4b4b;
 }
 
 /* HERO CONTENT STYLE */
