@@ -335,6 +335,112 @@ html {
 }
 
 
+/* FOOTER STYLE */
+/* Styling Judul: Company Name, Products, Contact, Follow Us */
+footer h6 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+/* Styling Isi Teks: Deskripsi, Link Products, Detail Contact */
+/* Mengubah semua teks di footer menjadi #333333 */
+footer,
+footer h6,
+footer p,
+footer a,
+footer i,
+.copyright-section,
+.footer-brand {
+    color: #333333 !important;
+}
+
+/* Mengatur Font Archivo Black untuk Judul & Copyright */
+footer h6,
+.footer-brand {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+}
+
+/* Mengatur Font Poppins untuk Isi/Detail */
+footer p, 
+footer p a, 
+footer p i,
+.copyright-section {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* Efek Hover untuk Link agar tetap fungsional */
+footer a:hover {
+    color: #000000 !important; /* Sedikit lebih gelap saat disentuh */
+    text-decoration: underline;
+}
+
+/* Mengatur warna umum footer menjadi #333333 */
+footer,
+.copyright-section,
+.footer-brand {
+    color: #333333 !important;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* KHUSUS BAGIAN PRODUCTS: Font Poppins & Warna #333333 */
+/* Kita targetkan kolom kedua (Products) */
+footer .col-md-2.col-lg-2.col-xl-2 p a {
+    font-family: 'Poppins', sans-serif;
+    color: #333333 !important;
+    text-decoration: none;
+}
+
+/* KHUSUS BAGIAN FOLLOW US: Judul & Ikon menjadi Putih */
+/* Kita targetkan kolom terakhir (Follow Us) */
+footer .col-md-3.col-lg-2.col-xl-2 h6,
+footer .col-md-3.col-lg-2.col-xl-2 i {
+    color: #333333  !important;
+}
+
+/* Pastikan Font tetap Archivo Black untuk judul Follow Us */
+footer .col-md-3.col-lg-2.col-xl-2 h6 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Styling isi teks lainnya (Company Name & Contact) tetap #333333 */
+footer .col-md-3 p, 
+footer .col-md-4 p {
+    font-family: 'Poppins', sans-serif;
+    color: #333333 !important;
+}
+
+/* 1. Styling Judul "Follow Us" */
+footer .col-md-3.col-lg-2.col-xl-2 h6 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #333333 !important; /* Warna abu-abu gelap sesuai permintaan */
+    text-uppercase: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+/* 2. Styling Ikon di dalam Follow Us */
+/* Kita targetkan tag <i> yang ada di dalam tombol (<a>) */
+footer .col-md-3.col-lg-2.col-xl-2 a i {
+    color: #ffffff !important; /* Warna ikon tetap putih */
+    font-size: 1.2rem;
+}
+
+/* 3. Menghapus bayangan atau border default pada tombol ikon (opsional) */
+.btn-floating {
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn-floating:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
 
 
 /* RESPONSIVE DESIGN */
