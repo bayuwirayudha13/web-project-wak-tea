@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WakTea - About</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style/about.css">
 </head>
+
 <body>
     <header class="navbar">
         <div class="navbar-container">
@@ -15,8 +19,7 @@
             <div class="nav-menu">
                 <a href="#">Home</a>
                 <a href="#about">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Menu</a>
+                <a href="#menu">Menu</a>
             </div>
 
             <div class="nav-icons">
@@ -32,7 +35,7 @@
             <div class="hero-content">
                 <h1>Mari ngeteh di WakTea!</h1>
                 <p>Nikmati berbagai rasa teh untuk menemani hari-harimu.</p>
-                <a href="#" class="btn">Lihat Menu</a>
+                <a href="#menu" class="btn">Lihat Menu</a>
             </div>
 
             <div class="hero-image">
@@ -50,18 +53,80 @@
                     </div>
 
                     <div class="about-text">
-                        <p>WakTea adalah tempat terbaik untuk menikmati teh berkualitas tinggi dengan berbagai varian rasa yang menggugah selera. 
-                        Kami berkomitmen untuk menyajikan teh segar dan nikmat bagi setiap pelanggan kami.</p>
-                        <p>Didirikan pada tahun 2020, WakTea telah menjadi favorit di kalangan pecinta teh. 
-                        Kami percaya bahwa teh bukan hanya sekadar minuman, tetapi juga pengalaman yang menyenangkan.</p>
+                        <p>WakTea adalah tempat terbaik untuk menikmati teh berkualitas tinggi dengan berbagai varian
+                            rasa yang menggugah selera.
+                            Kami berkomitmen untuk menyajikan teh segar dan nikmat bagi setiap pelanggan kami.</p>
+                        <p>Didirikan pada tahun 2020, WakTea telah menjadi favorit di kalangan pecinta teh.
+                            Kami percaya bahwa teh bukan hanya sekadar minuman, tetapi juga pengalaman yang
+                            menyenangkan.</p>
                         <a href="#" class="btn">Pelajari Lebih Lanjut</a>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <section id="menu" class="menu">
+            <div class="menu-header">
+                <h2 class="text-center"><span>Menu</span> WakTea</h2>
+            </div>
+
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="card custom-card">
+                            <div class="card-img-container">
+                                <img src="image/about image.jpg" class="card-img-top" alt="gambar-teh">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teh Tarik</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the cards content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="card custom-card">
+                            <div class="card-img-container">
+                                <img src="image/about image.jpg" class="card-img-top" alt="gambar-teh">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teh Tarik</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the cards content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="card custom-card">
+                            <div class="card-img-container">
+                                <img src="image/about image.jpg" class="card-img-top" alt="gambar-teh">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Teh Tarik</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the cards content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <button type="button" class="btn btn-menu-lainnya btn-lg">Menu Lainnya</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
 
     </main>
     <script src="javascript/about.js"></script>
 </body>
+
 </html>
