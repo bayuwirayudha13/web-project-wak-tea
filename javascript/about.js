@@ -93,7 +93,7 @@ daftarlokasi.forEach(item => {
                 <p class="fw-bold text-success mb-3">No Telp: ${item.no_telp}</p>
                 
                 <div class="mt-auto">
-                    <a href="${item.lokasi}" target="_blank" class="btn btn-primary">Lihat Lokasi</a>
+                    <a href="${item.lokasi}" target="blank" class="btn btn-primary">Lihat Lokasi</a>
                 </div>
             </div>
         </div>
