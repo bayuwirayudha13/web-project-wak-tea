@@ -249,11 +249,13 @@ html {
 
 /* MENU STYLE */
 .menu {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--green-soft);
     color: var(--text-dark);
     text-align: center;
     justify-content: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .menu-header h2 {
@@ -271,7 +273,7 @@ html {
 
 .custom-card {
     width: 100%;
-    max-width: 320px;
+    max-width: 380px;
     border-radius: 20px;
     border: none;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
@@ -326,12 +328,15 @@ html {
     font-family: poppins, sans-serif;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 5px;
 }
 
 .btn-menu:hover {
     background-color: #9bc07a;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -431,6 +436,8 @@ footer .col-md-3.col-lg-2.col-xl-2 a i {
     color: var(--text-dark);
     text-align: center;
     justify-content: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .location-header h2 {
@@ -444,6 +451,24 @@ footer .col-md-3.col-lg-2.col-xl-2 a i {
     font-size: 36px;
     color: var(--text-light);
     margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-text {
+    font-size: 0,85rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.custom-card {
+    height: 100%;
+}
+
+.card-body p {
+    margin-bottom: 5px;
 }
 
 
