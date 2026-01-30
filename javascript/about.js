@@ -8,7 +8,7 @@ document.querySelector('#hamburger-menu').onclick = () => {
 //KLIK DILUAR SIDEBAR UNTUK MENGHILANGKAN SIDEBAR
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     if (!hamburgerMenu.contains(event.target) && !navMenu.contains(event.targer)) {
         navMenu.classList.remove('active');
     }
@@ -16,10 +16,24 @@ document.addEventListener('click', function(event) {
 
 //menu 
 
-const daftarMenu = [
-    { nama: "Teh Tarik Original", harga: "Rp 15.000", img: "image/about image.jpg", desc: "Perpaduan teh pilihan dan susu kental manis." },
-    { nama: "Green Tea Latte", harga: "Rp 18.000", img: "image/about image.jpg", desc: "Matcha kualitas premium dengan susu segar." },
-    { nama: "Lemon Tea Ice", harga: "Rp 12.000", img: "image/about image.jpg", desc: "Kesegaran lemon asli untuk hari yang panas." },
+const daftarMenu = [{
+        nama: "Teh Tarik Original",
+        harga: "Rp 15.000",
+        img: "image/about image.jpg",
+        desc: "Perpaduan teh pilihan dan susu kental manis."
+    },
+    {
+        nama: "Green Tea Latte",
+        harga: "Rp 18.000",
+        img: "image/about image.jpg",
+        desc: "Matcha kualitas premium dengan susu segar."
+    },
+    {
+        nama: "Lemon Tea Ice",
+        harga: "Rp 12.000",
+        img: "image/about image.jpg",
+        desc: "Kesegaran lemon asli untuk hari yang panas."
+    },
 ];
 
 const container = document.getElementById('menu-container');
@@ -44,8 +58,7 @@ daftarMenu.forEach(item => {
 
 //lokasi
 
-const daftarlokasi = [
-    {
+const daftarlokasi = [{
         nama: "Waktea - Sedati",
         alamat: "Jl. Raya Buncitan No 95, Dusun Buncitan, Buncitan, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur 61253",
         no_telp: "0812-3456-7890",
