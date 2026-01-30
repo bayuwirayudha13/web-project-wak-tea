@@ -64,6 +64,7 @@ const daftarlokasi = [{
         no_telp: "0812-3456-7890",
         img: "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/20241130064950-beb268b7-1ed4-4636-9f9e-f479b7b10882.jpg",
         jam_buka: "10.00 - 22.00 WIB",
+        lokasi: "https://maps.app.goo.gl/5FMyd8yrxQSFr4G77"
     },
 
     {
@@ -72,7 +73,8 @@ const daftarlokasi = [{
         no_telp: "0896-5432-1098",
         img: "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/mild-steel-container-coffee-sh-20251215181308981.webp",
         jam_buka: "10.00 - 22.00 WIB",
-    }
+        lokasi: "https://maps.app.goo.gl/4jnskvan5rNPLvC87"
+    },
 ]
 
 const locationContainer = document.getElementById('location-container');
@@ -91,7 +93,7 @@ daftarlokasi.forEach(item => {
                 <p class="fw-bold text-success mb-3">No Telp: ${item.no_telp}</p>
                 
                 <div class="mt-auto">
-                    <a href="#" class="btn btn-primary">Lihat Lokasi</a>
+                    <a href="${item.lokasi}" target="_blank" class="btn btn-primary">Lihat Lokasi</a>
                 </div>
             </div>
         </div>
