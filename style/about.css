@@ -124,11 +124,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 0 0 10%;
     background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
     color: var(--text-light);
     min-height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -139,6 +140,11 @@ html {
     display: flex;
     flex-direction: column;
     max-width: 520px;
+    flex: 1.2;
+    padding-left: 8%;
+    padding-right: 5%;
+    z-index: 2;
+    position: relative;
 }
 
 .hero-content h1 {
@@ -176,10 +182,33 @@ html {
     background-color: #9bc07a;
 }
 
-.hero-image img {
-    width: 400px;
-    max-width: 100%;
-    border-radius: 10px;
+.hero-image-diagonal {
+    flex: 1;
+    height: 100vh;
+    position: relative;
+    background-image: url('hero-image.png');
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(135deg, var(--green-dark), #2c3e50);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-diagonal::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), transparent);
+}
+
+.hero-image-diagonal img {
+    width: 80%;
+    max-width: 500px;
+    filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.3));
+    animation: float 4s ease-in-out infinite;
+    z-index: 3;
 }
 
 /* ABOUT SECTION STYLE */
@@ -407,7 +436,6 @@ footer .col-md-4 p {
 footer .col-md-3.col-lg-2.col-xl-2 h6 {
     font-family: 'Archivo Black', sans-serif;
     color: #333333 !important; 
-    text-uppercase: uppercase;
     margin-bottom: 1.5rem;
 }
 
